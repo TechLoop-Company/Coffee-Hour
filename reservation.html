@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="reservation.css"></head>
+<body>
+    <img class="logo" src="image/logo.png">
+    <div class="navbar">
+        <ul>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <div class="socialmed">
+            <img src="image/facebook.png">
+            <img src="image/instagram.png">
+        </div>
+    </div>
+    <div class="user">
+        <img src="image/user.png">
+    </div>
+    <div class="navbar2">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="items.html">Items</a></li>
+            <li><a href="#">Store Locator</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </div>
+    
+    
+    <section class="section" id="reservation">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 align-self-center">
+                    <div class="left-text-content">
+                        <div class="section-heading">
+                            <h1>Contact Us </h1>
+                            <h3>For Dine-in and Reservations</h3>
+                        </div>
+                        <p>Good Ideas Start with Brainstorming 
+                            Great ideas Start With Coffee. <br>
+                            Always The Way You Like it.<br>
+                            Coffee Hour Open From Monday - Sunday<br>
+                            Coffe Hour EST. 2017<br> 
+                        </p>
+                        <div class="row">
+                            <div class="col-lg6">
+                                <div class="phone">
+                                    <i class="fa fa-phone"></i>
+                                    <h4>Phone Number:</h4>
+                                    <span><a href="#">09973747156</a><br><a href="#">09746267343</a></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="message">
+                                    <i class="fa fa-envelope"></i>
+                                    <h4>Email:</h4>
+                                    <span><a href="#">coffeehour@gmail.com</a><br><a href="#">coffeehour@facebook.com</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <form id="contact" action="" method="post">
+                          <div class="row">
+                            <div class="col-lg-12">
+                                <h4> Reservation Form</h4>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                              <fieldset>
+                                <input name="name" type="text" id="name" placeholder="Full Name" required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                              <fieldset>
+                              <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email" required="">
+                            </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                              <fieldset>
+                                <input name="phone" type="text" id="phone" placeholder="Contact Number" required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <select value="number-order" name="number-order" id="Quantity of Order ">
+                                    <option value="number-order">Number of Person</option>
+                                    <option name="1" id="1">1</option>
+                                    <option name="2" id="2">2</option>
+                                    <option name="3" id="3">3</option>
+                                    <option name="4" id="4">4</option>
+                                    <option name="5" id="5">5</option>
+
+                                </select>
+                              </fieldset>
+                            </div>
+                           <fieldset>
+                            <div class="col-lg-6">
+                                <div id="filterDate2">    
+                                  <div class="input-group date" data-date-format="day/month/year">
+                                    <input name="date"type ="date"date required>
+                                    <div class="input-group-addon" >
+                                      <span class="glyphicon glyphicon-th"></span>
+                                    </div>
+                                  </div>
+                                </div>   
+                            </div>  
+                           </fieldset>
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                
+                                
+                                <input type="time" min="11:00" max="8:00" required >
+                                
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <textarea name="message" rows="6" id="message" placeholder="Request"></textarea>
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <button type="submit" id="form-submit" class="main-button-icon">Submit Reservation</button>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

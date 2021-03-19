@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="menu.css">
+    <title>Menu</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+           <h3 class="brand">
+            <span>Coffee Hour</span>
+        </h3> 
+           <span class="ti-menu-alt"></span>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="admin.html">
+                        <span class="ti-home"></span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="menu.html">
+                        <span class="ti-book"></span>
+                        <span>Menu</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="admin.html">
+                        <span class="ti-shopping-cart"></span>
+                        <span>Orders</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="reserve.html">
+                        <span class="ti-calendar"></span>
+                        <span>Reservations</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="admin2.html">
+                        <span class="ti-user"></span>
+                        <span>Admin</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="user.html">
+                        <span class="ti-user"></span>
+                        <span>Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="staff.html">
+                        <span class="ti-user"></span>
+                        <span>Staff</span>
+                    </a>
+                </li>
+                <div class="logout">
+                    <p><a href="login.html">Logout</a></p>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="social-icons">
+                <span class="ti-bell"></span>
+                <div></div>
+            </div>
+            <div class="additem">
+                <button id="add-item">Add Item</button>
+            </div>
+        </header>
+        <div class="activity-grid">
+            <div class="activity-card">
+                <h3>Menu</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item Name</th>
+                            <th>Image</th>
+                            <th>Price</th>
+                            <th>Stocks</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                   <tbody>
+                    <tr>
+                        <td>Mocha Frappe</td>
+                        <td class="img1"><img src="basics/mocha.jpg"></td>
+                        <td>₱130.00</td>
+                        <td>20</td>
+                        <td>Active</td>
+                        <td>
+                            <button id="edit">Edit</button>
+                            <button id="del">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Matcha</td>
+                        <td class="img2"><img src="basics/matcha.jpg"></td>
+                        <td>₱100.00</td>
+                        <td>20</td>
+                        <td>Active</td>
+                        <td>
+                            <button id="edit">Edit</button>
+                            <button id="del">Delete</button>
+                        </td>
+                    </tr>
+                   </tbody> 
+                </table>
+            </div>
+        </div>
+        <div class="pops">
+            <div class="popup-contents">
+                <div class="cls6">+</div>
+                <input type="text" placeholder="Item Name">
+                <input type="number" placeholder="Quantity">
+                <input type="number" placeholder="Price">
+                <input type="file">
+                <div class="save">
+                    <button>Save</button>
+                </div>
+            </div>
+        </div>
+        <div class="del-pop">
+            <div class="del-content">
+                
+            </div>
+        </div>
+    <script src="additem.js"></script>
+</body>
+</html>

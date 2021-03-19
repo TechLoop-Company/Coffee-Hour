@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="cart.css">
+    <title>Cart</title>
+</head>
+<body>
+    <img class="logo" src="images/logo.png">
+    <div class="navbar">
+        <ul>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <div class="socialmed">
+            <img src="images/facebook.png">
+            <img src="images/instagram.png">
+        </div>
+    </div>
+    <div class="user">
+        <a href="myacct.html"><img src="images/user.png"></a>
+    </div>
+    <div class="cart">
+        <a href="cart.html">
+            <p>Cart  <span>0</span></p>
+        </a>
+    </div>
+    <div class="navbar2">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="items.html">Items</a></li>
+            <li><a href="#">Store Locator</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </div>
+    <div class="products-container">
+        <div class="products-header">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="prices">PRICE</h5>
+            <h5 class="quant">QUANTITY</h5>
+            <h5 class="totals">TOTAL</h5>
+        </div>
+        <div class="products">
+
+        </div>
+        <div class="orderbtn">
+            <button id="order">Order Now</button>
+        </div>
+    </div>
+
+    <div class="bg-modal">
+        <div class="modal-content">
+            <div class="cls">+</div>
+            <img src="images/logo.png" alt="">
+            <div class="choice">
+                <p><a id="pickup" href="#">Pickup</a></p>
+                <p><a id="deliver" href="#">Delivery</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="pick">
+        <div class="pick-content">
+            <div class="cls2">+</div>
+            <img src="images/logo.png" alt="">
+            <div class="message">
+                <p class="conf">Please pickup your order between 11:00 AM to 8:00 PM</p>
+                <button id="ok">Proceed</button>
+            </div>
+        </div>
+    </div>
+    <div class="proceed">
+        <div class="proceed-content">
+            <div class="cls3">+</div>
+            <p>Order Successfull!</p>
+        </div>
+    </div>
+    <div class="delivery">
+        <div class="deliver-content">
+            <div class="cls4">+</div>
+            <h4>Billing Information</h4>
+            <div class="bill">
+                <input type="text" placeholder="Fullname" required>
+                <input class="num" type="text" placeholder="Contact Number" required>
+                <input class="address" type="text" placeholder="Address" required>
+            </div>
+            <div class="pay">
+                <h4>Select Mode of Payment</h4>
+                <div class="payment">
+                    <p><input type="radio" name="COD" value="cod" checked>Cash-on Delivery</p>
+                    <input type="radio" name="gcash" value="gcash">GCash</p>
+                    <input class="gcash" type="text" placeholder="GCash Number">
+                </div>
+            </div>
+            <div class="check">
+                <button id="checkout">Proceed Checkout</button>
+            </div>
+            <div class="proceed">
+                <div class="proceed-content">
+                    <div class="cls4">+</div>
+                    <p>Order Successfull!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
